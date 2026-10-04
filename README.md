@@ -28,6 +28,11 @@ quoted from anywhere else.
   contiguous ranges. 289,394 code points are assigned in total.
 - **136** of the 170 advance the text cursor by exactly **0.00 px** at a 16 px
   font. **0** have a sub-pixel advance. **34** advance by 1 px or more.
+  Read the middle figure with care. The browser used here rounds every glyph
+  advance to a whole pixel, so it cannot resolve an advance smaller than one
+  pixel at all: "0 sub-pixel" means "none was measurable here", not "none
+  exists". The tell is a plain letter measured in the same run, which comes out
+  at a whole number here and does not in a real proportional font.
 - **36** of the 170 draw ink on a canvas at 64 px — but only 34 of those advance
   by 1 px or more. Two characters (**U+0605 ARABIC NUMBER MARK ABOVE** and
   **U+070F SYRIAC ABBREVIATION MARK**) paint a visible glyph while advancing the
@@ -98,7 +103,11 @@ The stability check is why the headline count is quoted **at a 16 px font**: at
 One character has a sub-pixel advance that stays under one pixel until the font
 is large enough to round it up. Both numbers are correct; the font size is part
 of the measurement, so it is stated rather than dropped. No configuration
-produced a sub-pixel advance at 16 px, in any of the three font stacks.
+produced a sub-pixel advance at 16 px, in any of the three font stacks — but see
+the caveat above: this browser quantises glyph advances to whole pixels, so a
+sub-pixel advance would be indistinguishable from zero in this measurement. What
+the stability check establishes is the zero-versus-visible split, which is what
+the tables use, and not the shape of any value below one pixel.
 
 ## Tools
 
