@@ -1,0 +1,24 @@
+codepoint,name,advance_px_16,advance_px_64,ink_pixels_64px,bubble_height_px,bubble_width_1_copy_px,bubble_width_10_copies_px,utf16_units,js_trim_removes,enables_send_under_trim_gate,placeholder_shown,required_counts_as_filled,matches_css_empty
+U+00A0,NO-BREAK SPACE,5,19,0,38.39,29,74,1,True,False,False,True,False
+U+00AD,SOFT HYPHEN,0,0,0,38.39,31,31,1,False,True,False,True,False
+U+034F,COMBINING GRAPHEME JOINER,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+061C,ARABIC LETTER MARK,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+115F,HANGUL CHOSEONG FILLER,16,64,0,38.39,40,184,1,False,True,False,True,False
+U+1160,HANGUL JUNGSEONG FILLER,16,64,0,38.39,40,184,1,False,True,False,True,False
+U+180E,MONGOLIAN VOWEL SEPARATOR,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+200B,ZERO WIDTH SPACE,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+200C,ZERO WIDTH NON-JOINER,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+200D,ZERO WIDTH JOINER,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+200E,LEFT-TO-RIGHT MARK,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+200F,RIGHT-TO-LEFT MARK,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+2028,LINE SEPARATOR,5,19,0,38.39,29,74,1,True,False,False,True,False
+U+2029,PARAGRAPH SEPARATOR,5,19,0,38.39,29,74,1,True,False,False,True,False
+U+202F,NARROW NO-BREAK SPACE,3,10,0,38.39,27,54,1,True,False,False,True,False
+U+205F,MEDIUM MATHEMATICAL SPACE,4,14,0,38.39,28,64,1,True,False,False,True,False
+U+2060,WORD JOINER,0,0,0,38.39,24,24,1,False,True,False,True,False
+U+3000,IDEOGRAPHIC SPACE,16,64,0,38.39,40,184,1,True,False,False,True,False
+U+3164,HANGUL FILLER,16,64,0,38.39,40,184,1,False,True,False,True,False
+U+FEFF,ZERO WIDTH NO-BREAK SPACE,0,0,0,38.39,24,24,1,True,False,False,True,False
+U+FFA0,HALFWIDTH HANGUL FILLER,8,32,0,38.39,32,104,1,False,True,False,True,False
+U+E0001,LANGUAGE TAG,0,0,0,38.39,24,24,2,False,True,False,True,False
+U+E0020,TAG SPACE,0,0,0,38.39,24,24,2,False,True,False,True,False

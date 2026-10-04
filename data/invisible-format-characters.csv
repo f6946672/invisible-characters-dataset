@@ -1,0 +1,171 @@
+codepoint,char_escaped,name,category,utf8_bytes,utf16_units,advance_width_px_at_16px,advance_px_at_64px,draws_ink_at_64px,ink_pixels_at_64px,js_trim_removes,js_regex_s_matches,python_isspace,python_strip_removes,nfkc_changes,nfkc_result,email_input_accepts,required_counts_as_filled,css_empty_matches,bubble_height_px
+U+00AD,\u00ad,SOFT HYPHEN,Cf,2,1,0,0,False,0,False,False,False,False,False,U+00AD,False,True,False,38.39
+U+0600,\u0600,ARABIC NUMBER SIGN,Cf,2,1,20,59,True,385,False,False,False,False,False,U+0600,False,True,False,38.39
+U+0601,\u0601,ARABIC SIGN SANAH,Cf,2,1,13,99,True,669,False,False,False,False,False,U+0601,False,True,False,38.39
+U+0602,\u0602,ARABIC FOOTNOTE MARKER,Cf,2,1,9,38,True,434,False,False,False,False,False,U+0602,False,True,False,38.39
+U+0603,\u0603,ARABIC SIGN SAFHA,Cf,2,1,24,83,True,655,False,False,False,False,False,U+0603,False,True,False,38.39
+U+0604,\u0604,ARABIC SIGN SAMVAT,Cf,2,1,25,97,True,868,False,False,False,False,False,U+0604,False,True,False,38.39
+U+0605,\u0605,ARABIC NUMBER MARK ABOVE,Cf,2,1,0,0,True,121,False,False,False,False,False,U+0605,False,True,False,38.39
+U+061C,\u061c,ARABIC LETTER MARK,Cf,2,1,0,0,False,0,False,False,False,False,False,U+061C,False,True,False,38.39
+U+06DD,\u06dd,ARABIC END OF AYAH,Cf,2,1,18,72,True,892,False,False,False,False,False,U+06DD,False,True,False,38.39
+U+070F,\u070f,SYRIAC ABBREVIATION MARK,Cf,2,1,0,1,True,67,False,False,False,False,False,U+070F,False,True,False,38.39
+U+0890,\u0890,ARABIC POUND MARK ABOVE,Cf,3,1,11,45,True,654,False,False,False,False,False,U+0890,False,True,False,38.39
+U+0891,\u0891,ARABIC PIASTRE MARK ABOVE,Cf,3,1,11,45,True,654,False,False,False,False,False,U+0891,False,True,False,38.39
+U+08E2,\u08e2,ARABIC DISPUTED END OF AYAH,Cf,3,1,9,50,True,256,False,False,False,False,False,U+08E2,False,True,False,38.39
+U+180E,\u180e,MONGOLIAN VOWEL SEPARATOR,Cf,3,1,0,0,False,0,False,False,False,False,False,U+180E,False,True,False,38.39
+U+200B,\u200b,ZERO WIDTH SPACE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+200B,False,True,False,38.39
+U+200C,\u200c,ZERO WIDTH NON-JOINER,Cf,3,1,0,0,False,0,False,False,False,False,False,U+200C,False,True,False,38.39
+U+200D,\u200d,ZERO WIDTH JOINER,Cf,3,1,0,0,False,0,False,False,False,False,False,U+200D,False,True,False,38.39
+U+200E,\u200e,LEFT-TO-RIGHT MARK,Cf,3,1,0,0,False,0,False,False,False,False,False,U+200E,False,True,False,38.39
+U+200F,\u200f,RIGHT-TO-LEFT MARK,Cf,3,1,0,0,False,0,False,False,False,False,False,U+200F,False,True,False,38.39
+U+202A,\u202a,LEFT-TO-RIGHT EMBEDDING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+202A,False,True,False,38.39
+U+202B,\u202b,RIGHT-TO-LEFT EMBEDDING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+202B,False,True,False,38.39
+U+202C,\u202c,POP DIRECTIONAL FORMATTING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+202C,False,True,False,38.39
+U+202D,\u202d,LEFT-TO-RIGHT OVERRIDE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+202D,False,True,False,38.39
+U+202E,\u202e,RIGHT-TO-LEFT OVERRIDE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+202E,False,True,False,38.39
+U+2060,\u2060,WORD JOINER,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2060,False,True,False,38.39
+U+2061,\u2061,FUNCTION APPLICATION,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2061,False,True,False,38.39
+U+2062,\u2062,INVISIBLE TIMES,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2062,False,True,False,38.39
+U+2063,\u2063,INVISIBLE SEPARATOR,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2063,False,True,False,38.39
+U+2064,\u2064,INVISIBLE PLUS,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2064,False,True,False,38.39
+U+2066,\u2066,LEFT-TO-RIGHT ISOLATE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2066,False,True,False,38.39
+U+2067,\u2067,RIGHT-TO-LEFT ISOLATE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2067,False,True,False,38.39
+U+2068,\u2068,FIRST STRONG ISOLATE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2068,False,True,False,38.39
+U+2069,\u2069,POP DIRECTIONAL ISOLATE,Cf,3,1,0,0,False,0,False,False,False,False,False,U+2069,False,True,False,38.39
+U+206A,\u206a,INHIBIT SYMMETRIC SWAPPING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206A,False,True,False,38.39
+U+206B,\u206b,ACTIVATE SYMMETRIC SWAPPING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206B,False,True,False,38.39
+U+206C,\u206c,INHIBIT ARABIC FORM SHAPING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206C,False,True,False,38.39
+U+206D,\u206d,ACTIVATE ARABIC FORM SHAPING,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206D,False,True,False,38.39
+U+206E,\u206e,NATIONAL DIGIT SHAPES,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206E,False,True,False,38.39
+U+206F,\u206f,NOMINAL DIGIT SHAPES,Cf,3,1,0,0,False,0,False,False,False,False,False,U+206F,False,True,False,38.39
+U+FEFF,\ufeff,ZERO WIDTH NO-BREAK SPACE,Cf,3,1,0,0,False,0,True,True,False,False,False,U+FEFF,False,True,False,38.39
+U+FFF9,\ufff9,INTERLINEAR ANNOTATION ANCHOR,Cf,3,1,11,45,True,654,False,False,False,False,False,U+FFF9,False,True,False,38.39
+U+FFFA,\ufffa,INTERLINEAR ANNOTATION SEPARATOR,Cf,3,1,11,45,True,654,False,False,False,False,False,U+FFFA,False,True,False,38.39
+U+FFFB,\ufffb,INTERLINEAR ANNOTATION TERMINATOR,Cf,3,1,11,45,True,654,False,False,False,False,False,U+FFFB,False,True,False,38.39
+U+110BD,\U000110bd,KAITHI NUMBER SIGN,Cf,4,2,10,42,True,538,False,False,False,False,False,U+110BD,False,True,False,38.39
+U+110CD,\U000110cd,KAITHI NUMBER SIGN ABOVE,Cf,4,2,10,42,True,532,False,False,False,False,False,U+110CD,False,True,False,38.39
+U+13430,\U00013430,EGYPTIAN HIEROGLYPH VERTICAL JOINER,Cf,4,2,10,39,True,274,False,False,False,False,False,U+13430,False,True,False,38.39
+U+13431,\U00013431,EGYPTIAN HIEROGLYPH HORIZONTAL JOINER,Cf,4,2,10,39,True,369,False,False,False,False,False,U+13431,False,True,False,38.39
+U+13432,\U00013432,EGYPTIAN HIEROGLYPH INSERT AT TOP START,Cf,4,2,10,39,True,343,False,False,False,False,False,U+13432,False,True,False,38.39
+U+13433,\U00013433,EGYPTIAN HIEROGLYPH INSERT AT BOTTOM START,Cf,4,2,10,39,True,343,False,False,False,False,False,U+13433,False,True,False,38.39
+U+13434,\U00013434,EGYPTIAN HIEROGLYPH INSERT AT TOP END,Cf,4,2,10,39,True,343,False,False,False,False,False,U+13434,False,True,False,38.39
+U+13435,\U00013435,EGYPTIAN HIEROGLYPH INSERT AT BOTTOM END,Cf,4,2,10,39,True,343,False,False,False,False,False,U+13435,False,True,False,38.39
+U+13436,\U00013436,EGYPTIAN HIEROGLYPH OVERLAY MIDDLE,Cf,4,2,10,39,True,367,False,False,False,False,False,U+13436,False,True,False,38.39
+U+13437,\U00013437,EGYPTIAN HIEROGLYPH BEGIN SEGMENT,Cf,4,2,10,39,True,311,False,False,False,False,False,U+13437,False,True,False,38.39
+U+13438,\U00013438,EGYPTIAN HIEROGLYPH END SEGMENT,Cf,4,2,10,39,True,310,False,False,False,False,False,U+13438,False,True,False,38.39
+U+13439,\U00013439,EGYPTIAN HIEROGLYPH INSERT AT MIDDLE,Cf,4,2,11,45,True,654,False,False,False,False,False,U+13439,False,True,False,38.39
+U+1343A,\U0001343a,EGYPTIAN HIEROGLYPH INSERT AT TOP,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343A,False,True,False,38.39
+U+1343B,\U0001343b,EGYPTIAN HIEROGLYPH INSERT AT BOTTOM,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343B,False,True,False,38.39
+U+1343C,\U0001343c,EGYPTIAN HIEROGLYPH BEGIN ENCLOSURE,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343C,False,True,False,38.39
+U+1343D,\U0001343d,EGYPTIAN HIEROGLYPH END ENCLOSURE,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343D,False,True,False,38.39
+U+1343E,\U0001343e,EGYPTIAN HIEROGLYPH BEGIN WALLED ENCLOSURE,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343E,False,True,False,38.39
+U+1343F,\U0001343f,EGYPTIAN HIEROGLYPH END WALLED ENCLOSURE,Cf,4,2,11,45,True,654,False,False,False,False,False,U+1343F,False,True,False,38.39
+U+1BCA0,\U0001bca0,SHORTHAND FORMAT LETTER OVERLAP,Cf,4,2,18,72,True,795,False,False,False,False,False,U+1BCA0,False,True,False,38.39
+U+1BCA1,\U0001bca1,SHORTHAND FORMAT CONTINUING OVERLAP,Cf,4,2,18,72,True,824,False,False,False,False,False,U+1BCA1,False,True,False,38.39
+U+1BCA2,\U0001bca2,SHORTHAND FORMAT DOWN STEP,Cf,4,2,18,72,True,705,False,False,False,False,False,U+1BCA2,False,True,False,38.39
+U+1BCA3,\U0001bca3,SHORTHAND FORMAT UP STEP,Cf,4,2,18,72,True,706,False,False,False,False,False,U+1BCA3,False,True,False,38.39
+U+1D173,\U0001d173,MUSICAL SYMBOL BEGIN BEAM,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D173,False,True,False,38.39
+U+1D174,\U0001d174,MUSICAL SYMBOL END BEAM,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D174,False,True,False,38.39
+U+1D175,\U0001d175,MUSICAL SYMBOL BEGIN TIE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D175,False,True,False,38.39
+U+1D176,\U0001d176,MUSICAL SYMBOL END TIE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D176,False,True,False,38.39
+U+1D177,\U0001d177,MUSICAL SYMBOL BEGIN SLUR,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D177,False,True,False,38.39
+U+1D178,\U0001d178,MUSICAL SYMBOL END SLUR,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D178,False,True,False,38.39
+U+1D179,\U0001d179,MUSICAL SYMBOL BEGIN PHRASE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D179,False,True,False,38.39
+U+1D17A,\U0001d17a,MUSICAL SYMBOL END PHRASE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+1D17A,False,True,False,38.39
+U+E0001,\U000e0001,LANGUAGE TAG,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0001,False,True,False,38.39
+U+E0020,\U000e0020,TAG SPACE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0020,False,True,False,38.39
+U+E0021,\U000e0021,TAG EXCLAMATION MARK,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0021,False,True,False,38.39
+U+E0022,\U000e0022,TAG QUOTATION MARK,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0022,False,True,False,38.39
+U+E0023,\U000e0023,TAG NUMBER SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0023,False,True,False,38.39
+U+E0024,\U000e0024,TAG DOLLAR SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0024,False,True,False,38.39
+U+E0025,\U000e0025,TAG PERCENT SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0025,False,True,False,38.39
+U+E0026,\U000e0026,TAG AMPERSAND,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0026,False,True,False,38.39
+U+E0027,\U000e0027,TAG APOSTROPHE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0027,False,True,False,38.39
+U+E0028,\U000e0028,TAG LEFT PARENTHESIS,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0028,False,True,False,38.39
+U+E0029,\U000e0029,TAG RIGHT PARENTHESIS,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0029,False,True,False,38.39
+U+E002A,\U000e002a,TAG ASTERISK,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002A,False,True,False,38.39
+U+E002B,\U000e002b,TAG PLUS SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002B,False,True,False,38.39
+U+E002C,\U000e002c,TAG COMMA,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002C,False,True,False,38.39
+U+E002D,\U000e002d,TAG HYPHEN-MINUS,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002D,False,True,False,38.39
+U+E002E,\U000e002e,TAG FULL STOP,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002E,False,True,False,38.39
+U+E002F,\U000e002f,TAG SOLIDUS,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E002F,False,True,False,38.39
+U+E0030,\U000e0030,TAG DIGIT ZERO,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0030,False,True,False,38.39
+U+E0031,\U000e0031,TAG DIGIT ONE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0031,False,True,False,38.39
+U+E0032,\U000e0032,TAG DIGIT TWO,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0032,False,True,False,38.39
+U+E0033,\U000e0033,TAG DIGIT THREE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0033,False,True,False,38.39
+U+E0034,\U000e0034,TAG DIGIT FOUR,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0034,False,True,False,38.39
+U+E0035,\U000e0035,TAG DIGIT FIVE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0035,False,True,False,38.39
+U+E0036,\U000e0036,TAG DIGIT SIX,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0036,False,True,False,38.39
+U+E0037,\U000e0037,TAG DIGIT SEVEN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0037,False,True,False,38.39
+U+E0038,\U000e0038,TAG DIGIT EIGHT,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0038,False,True,False,38.39
+U+E0039,\U000e0039,TAG DIGIT NINE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0039,False,True,False,38.39
+U+E003A,\U000e003a,TAG COLON,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003A,False,True,False,38.39
+U+E003B,\U000e003b,TAG SEMICOLON,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003B,False,True,False,38.39
+U+E003C,\U000e003c,TAG LESS-THAN SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003C,False,True,False,38.39
+U+E003D,\U000e003d,TAG EQUALS SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003D,False,True,False,38.39
+U+E003E,\U000e003e,TAG GREATER-THAN SIGN,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003E,False,True,False,38.39
+U+E003F,\U000e003f,TAG QUESTION MARK,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E003F,False,True,False,38.39
+U+E0040,\U000e0040,TAG COMMERCIAL AT,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0040,False,True,False,38.39
+U+E0041,\U000e0041,TAG LATIN CAPITAL LETTER A,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0041,False,True,False,38.39
+U+E0042,\U000e0042,TAG LATIN CAPITAL LETTER B,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0042,False,True,False,38.39
+U+E0043,\U000e0043,TAG LATIN CAPITAL LETTER C,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0043,False,True,False,38.39
+U+E0044,\U000e0044,TAG LATIN CAPITAL LETTER D,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0044,False,True,False,38.39
+U+E0045,\U000e0045,TAG LATIN CAPITAL LETTER E,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0045,False,True,False,38.39
+U+E0046,\U000e0046,TAG LATIN CAPITAL LETTER F,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0046,False,True,False,38.39
+U+E0047,\U000e0047,TAG LATIN CAPITAL LETTER G,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0047,False,True,False,38.39
+U+E0048,\U000e0048,TAG LATIN CAPITAL LETTER H,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0048,False,True,False,38.39
+U+E0049,\U000e0049,TAG LATIN CAPITAL LETTER I,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0049,False,True,False,38.39
+U+E004A,\U000e004a,TAG LATIN CAPITAL LETTER J,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004A,False,True,False,38.39
+U+E004B,\U000e004b,TAG LATIN CAPITAL LETTER K,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004B,False,True,False,38.39
+U+E004C,\U000e004c,TAG LATIN CAPITAL LETTER L,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004C,False,True,False,38.39
+U+E004D,\U000e004d,TAG LATIN CAPITAL LETTER M,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004D,False,True,False,38.39
+U+E004E,\U000e004e,TAG LATIN CAPITAL LETTER N,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004E,False,True,False,38.39
+U+E004F,\U000e004f,TAG LATIN CAPITAL LETTER O,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E004F,False,True,False,38.39
+U+E0050,\U000e0050,TAG LATIN CAPITAL LETTER P,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0050,False,True,False,38.39
+U+E0051,\U000e0051,TAG LATIN CAPITAL LETTER Q,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0051,False,True,False,38.39
+U+E0052,\U000e0052,TAG LATIN CAPITAL LETTER R,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0052,False,True,False,38.39
+U+E0053,\U000e0053,TAG LATIN CAPITAL LETTER S,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0053,False,True,False,38.39
+U+E0054,\U000e0054,TAG LATIN CAPITAL LETTER T,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0054,False,True,False,38.39
+U+E0055,\U000e0055,TAG LATIN CAPITAL LETTER U,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0055,False,True,False,38.39
+U+E0056,\U000e0056,TAG LATIN CAPITAL LETTER V,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0056,False,True,False,38.39
+U+E0057,\U000e0057,TAG LATIN CAPITAL LETTER W,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0057,False,True,False,38.39
+U+E0058,\U000e0058,TAG LATIN CAPITAL LETTER X,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0058,False,True,False,38.39
+U+E0059,\U000e0059,TAG LATIN CAPITAL LETTER Y,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0059,False,True,False,38.39
+U+E005A,\U000e005a,TAG LATIN CAPITAL LETTER Z,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005A,False,True,False,38.39
+U+E005B,\U000e005b,TAG LEFT SQUARE BRACKET,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005B,False,True,False,38.39
+U+E005C,\U000e005c,TAG REVERSE SOLIDUS,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005C,False,True,False,38.39
+U+E005D,\U000e005d,TAG RIGHT SQUARE BRACKET,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005D,False,True,False,38.39
+U+E005E,\U000e005e,TAG CIRCUMFLEX ACCENT,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005E,False,True,False,38.39
+U+E005F,\U000e005f,TAG LOW LINE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E005F,False,True,False,38.39
+U+E0060,\U000e0060,TAG GRAVE ACCENT,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0060,False,True,False,38.39
+U+E0061,\U000e0061,TAG LATIN SMALL LETTER A,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0061,False,True,False,38.39
+U+E0062,\U000e0062,TAG LATIN SMALL LETTER B,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0062,False,True,False,38.39
+U+E0063,\U000e0063,TAG LATIN SMALL LETTER C,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0063,False,True,False,38.39
+U+E0064,\U000e0064,TAG LATIN SMALL LETTER D,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0064,False,True,False,38.39
+U+E0065,\U000e0065,TAG LATIN SMALL LETTER E,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0065,False,True,False,38.39
+U+E0066,\U000e0066,TAG LATIN SMALL LETTER F,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0066,False,True,False,38.39
+U+E0067,\U000e0067,TAG LATIN SMALL LETTER G,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0067,False,True,False,38.39
+U+E0068,\U000e0068,TAG LATIN SMALL LETTER H,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0068,False,True,False,38.39
+U+E0069,\U000e0069,TAG LATIN SMALL LETTER I,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0069,False,True,False,38.39
+U+E006A,\U000e006a,TAG LATIN SMALL LETTER J,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006A,False,True,False,38.39
+U+E006B,\U000e006b,TAG LATIN SMALL LETTER K,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006B,False,True,False,38.39
+U+E006C,\U000e006c,TAG LATIN SMALL LETTER L,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006C,False,True,False,38.39
+U+E006D,\U000e006d,TAG LATIN SMALL LETTER M,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006D,False,True,False,38.39
+U+E006E,\U000e006e,TAG LATIN SMALL LETTER N,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006E,False,True,False,38.39
+U+E006F,\U000e006f,TAG LATIN SMALL LETTER O,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E006F,False,True,False,38.39
+U+E0070,\U000e0070,TAG LATIN SMALL LETTER P,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0070,False,True,False,38.39
+U+E0071,\U000e0071,TAG LATIN SMALL LETTER Q,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0071,False,True,False,38.39
+U+E0072,\U000e0072,TAG LATIN SMALL LETTER R,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0072,False,True,False,38.39
+U+E0073,\U000e0073,TAG LATIN SMALL LETTER S,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0073,False,True,False,38.39
+U+E0074,\U000e0074,TAG LATIN SMALL LETTER T,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0074,False,True,False,38.39
+U+E0075,\U000e0075,TAG LATIN SMALL LETTER U,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0075,False,True,False,38.39
+U+E0076,\U000e0076,TAG LATIN SMALL LETTER V,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0076,False,True,False,38.39
+U+E0077,\U000e0077,TAG LATIN SMALL LETTER W,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0077,False,True,False,38.39
+U+E0078,\U000e0078,TAG LATIN SMALL LETTER X,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0078,False,True,False,38.39
+U+E0079,\U000e0079,TAG LATIN SMALL LETTER Y,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E0079,False,True,False,38.39
+U+E007A,\U000e007a,TAG LATIN SMALL LETTER Z,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007A,False,True,False,38.39
+U+E007B,\U000e007b,TAG LEFT CURLY BRACKET,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007B,False,True,False,38.39
+U+E007C,\U000e007c,TAG VERTICAL LINE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007C,False,True,False,38.39
+U+E007D,\U000e007d,TAG RIGHT CURLY BRACKET,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007D,False,True,False,38.39
+U+E007E,\U000e007e,TAG TILDE,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007E,False,True,False,38.39
+U+E007F,\U000e007f,CANCEL TAG,Cf,4,2,0,0,False,0,False,False,False,False,False,U+E007F,False,True,False,38.39
