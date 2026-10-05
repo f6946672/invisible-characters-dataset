@@ -14,6 +14,7 @@ browser, with the raw output committed and the scripts that produced it.
 |---|---|---|
 | `data/invisible-format-characters.csv` | 170 | One row per `Cf` character: advance width, ink, whitespace behaviour, normalisation, form-API verdicts |
 | `data/blank-message-candidates.csv` | 23 | What a single character does inside a chat bubble, and whether it gets past a send button's emptiness check |
+| `data/cf-width-resolved.csv` | 170 | The same advances re-measured at 4000 px and scaled to 16 px — this is what resolves values below one pixel |
 | `data/cf-codepoint-ranges.csv` | 21 | The contiguous `Cf` ranges, for writing a regex without listing 170 code points |
 | `data/unicode-facts.json` | — | Raw Unicode Character Database output (Python `unicodedata`) |
 | `data/render-facts.json` | — | Raw browser output (Chromium via Playwright) |
@@ -26,18 +27,25 @@ quoted from anywhere else.
 
 - Unicode 15.1 defines **170** characters in category `Cf` (format), in **21**
   contiguous ranges. 289,394 code points are assigned in total.
-- **136** of the 170 advance the text cursor by exactly **0.00 px** at a 16 px
-  font. **0** have a sub-pixel advance. **34** advance by 1 px or more.
-  Read the middle figure with care. The browser used here rounds every glyph
-  advance to a whole pixel, so it cannot resolve an advance smaller than one
-  pixel at all: "0 sub-pixel" means "none was measurable here", not "none
-  exists". The tell is a plain letter measured in the same run, which comes out
-  at a whole number here and does not in a real proportional font.
+- **136** of the 170 report an advance of exactly **0.00 px** at a 16 px font,
+  and **34** advance by 1 px or more. Read the first figure with care: at 16 px
+  this browser rounds every glyph advance to a whole pixel, so the 16 px column
+  cannot separate 0 from a quarter of a pixel.
+- The rounding is a property of the 16 px measurement, not a blind spot in the
+  instrument. Re-measured at **4000 px** and scaled back down — where the
+  rounding is 250x smaller, about +-0.002 px — the split is **135 / 1 / 34**:
+  exactly one character has a sub-pixel advance, **U+070F SYRIAC ABBREVIATION
+  MARK** at **0.25 px**. The characters usually listed as sub-pixel (U+200C,
+  U+200F, U+202B, U+202E, U+2067, U+061C) resolve to exactly **0**. Two controls
+  measured in the same run, a capital `A` and an ordinary space, are stable
+  across 1000 px and 4000 px, which is what says the scaling holds. See
+  `data/cf-width-resolved.csv`.
 - **36** of the 170 draw ink on a canvas at 64 px — but only 34 of those advance
   by 1 px or more. Two characters (**U+0605 ARABIC NUMBER MARK ABOVE** and
-  **U+070F SYRIAC ABBREVIATION MARK**) paint a visible glyph while advancing the
-  cursor by **0 px**. They are invisible in the sense that they take no space,
-  and visible in the sense that they draw.
+  **U+070F SYRIAC ABBREVIATION MARK**) paint a visible glyph while reporting a
+  **0 px** advance at 16 px. They are invisible in the sense that they take no
+  space, and visible in the sense that they draw. Resolved, U+0605 is exactly
+  0 px and U+070F is the 0.25 px case above.
 - **1** of the 170 is removed by JavaScript's `trim()`, and it is the same one
   matched by `/\s/`: **U+FEFF**. **0** of the 170 are removed by Python's
   `strip()`, and **0** return `True` from `str.isspace()`.
@@ -84,7 +92,15 @@ python scripts/measure_unicode.py          # Unicode facts  -> data/unicode-fact
 node   scripts/measure_chromium.mjs        # browser facts  -> data/render-facts.json
 node   scripts/measure_blank_message.mjs   # chat bubble    -> data/blank-message.json
 python scripts/build_csv.py                # join them      -> the three CSVs
+node   scripts/measure_resolved_widths.mjs # 4000 px sweep  -> data/cf-width-resolved.csv
 ```
+
+One caveat about four rows. The advance of the Arabic combining marks
+(U+0600, U+0601, U+0603, U+08E2) depends on which fallback font ends up
+drawing them, and the two setups disagree by several pixels: the 16 px column
+was measured with the probe element positioned off-screen, the resolved column
+with the element in flow. Both are reproducible from the committed scripts;
+neither is "the" value for those four.
 
 `measure_chromium.mjs` needs Playwright with a Chromium build. The other two
 need nothing outside the standard library.
