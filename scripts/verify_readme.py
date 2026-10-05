@@ -51,9 +51,26 @@ def main():
     zero = sum(1 for r in master if float(r["advance_width_px_at_16px"]) == 0)
     sub = sum(1 for r in master if 0 < float(r["advance_width_px_at_16px"]) < 1)
     draw = sum(1 for r in master if float(r["advance_width_px_at_16px"]) >= 1)
-    chk("advance exactly 0.00 px", zero, claim(r"\*\*(\d+)\*\* of the 170 advance the text cursor by exactly"))
-    chk("sub-pixel advance", sub, claim(r"\*\*(\d+)\*\* have a sub-pixel advance"))
+    chk("advance exactly 0.00 px at 16 px", zero, claim(r"\*\*(\d+)\*\* of the 170 report an advance of exactly"))
     chk("advance >= 1 px", draw, claim(r"\*\*(\d+)\*\* advance by 1 px or more"))
+    # The 16 px column rounds, so it reports every sub-pixel advance as 0. The
+    # resolved column (4000 px sweep, scaled down) is what actually settles it.
+    chk("16 px column sees no sub-pixel advance", sub, 0)
+    resolved = list(csv.DictReader(open(os.path.join(ROOT, "data", "cf-width-resolved.csv"),
+                                       encoding="utf-8")))
+    chk("resolved rows", len(resolved), 170)
+    sub_res = [r["codepoint"] for r in resolved
+               if 0 < float(r["advance_px_16_resolved"]) < 1]
+    chk("sub-pixel advance (resolved)", sub_res, ["U+070F"])
+    u070f = [r for r in resolved if r["codepoint"] == "U+070F"][0]
+    chk("U+070F resolved to a quarter pixel",
+        round(float(u070f["advance_px_16_resolved"]), 2), 0.25)
+    zero_res = sum(1 for r in resolved if float(r["advance_px_16_resolved"]) == 0)
+    draw_res = sum(1 for r in resolved if float(r["advance_px_16_resolved"]) >= 1)
+    m = re.search(r"the split is \*\*(\d+) / (\d+) / (\d+)\*\*", readme)
+    chk("README quotes the resolved split",
+        (m.group(1), m.group(2), m.group(3)) if m else None,
+        (str(zero_res), str(len(sub_res)), str(draw_res)))
 
     print("\n--- ink ---")
     ink = [r for r in master if r["draws_ink_at_64px"] == "True"]
