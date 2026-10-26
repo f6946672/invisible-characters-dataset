@@ -1,0 +1,146 @@
+[
+  {
+    "codepoint": "U+200B",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+200C",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+200D",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+200E",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+200F",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+202A",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+202C",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+202D",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+202E",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+2060",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+FEFF",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": true,
+    "js_regex_whitespace_removes_it": true,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+00AD",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+034F",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+3164",
+    "js_length_of_6_char_string": 6,
+    "js_length_of_char_alone": 1,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+E0001",
+    "js_length_of_6_char_string": 7,
+    "js_length_of_char_alone": 2,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  },
+  {
+    "codepoint": "U+1D173",
+    "js_length_of_6_char_string": 7,
+    "js_length_of_char_alone": 2,
+    "js_codepoint_count_of_6_char_string": 6,
+    "js_trim_removes_it": false,
+    "js_regex_whitespace_removes_it": false,
+    "node": "v22.22.2"
+  }
+]

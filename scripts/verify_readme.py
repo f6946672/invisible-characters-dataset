@@ -125,6 +125,27 @@ def main():
     chk("U+E0020 is 2 UTF-16 units",
         [r["utf16_units"] for r in blank if r["codepoint"] == "U+E0020"], ["2"])
 
+    print("\n--- counting table ---")
+    counting = list(csv.DictReader(open(os.path.join(ROOT, "data", "character-counting.csv"),
+                                       encoding="utf-8")))
+    chk("counting rows", len(counting), 16)
+    three = sum(1 for r in counting if r["utf8_bytes"] == "3")
+    chk("three-byte rows", three, claim(r"(\d+) of these sixteen are three bytes"))
+    chk("percent-encoding is 3 chars per byte",
+        all(int(r["percent_encoded_length"]) == int(r["utf8_bytes"]) * 3 for r in counting), True)
+    chk("js and py disagree on exactly two",
+        sorted(r["codepoint"] for r in counting if r["js_length"] != r["py_len"]),
+        ["U+1D173", "U+E0001"])
+    chk("js length for astral rows",
+        sorted({r["js_length"] for r in counting if int(r["utf8_bytes"]) == 4}), ["7"])
+    chk("py len is 6 for every row",
+        sorted({r["py_len"] for r in counting}), ["6"])
+    chk("trim() removes exactly one",
+        [r["codepoint"] for r in counting if r["js_trim_removes_it"] == "yes"], ["U+FEFF"])
+    chk("NFKC changes exactly one",
+        {r["codepoint"]: r["py_nfkc"] for r in counting if r["py_nfkc"] != r["codepoint"]},
+        {"U+3164": "U+1160"})
+
     print("\n--- tools ---")
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import strip_invisible as si

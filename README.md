@@ -15,6 +15,7 @@ browser, with the raw output committed and the scripts that produced it.
 | `data/invisible-format-characters.csv` | 170 | One row per `Cf` character: advance width, ink, whitespace behaviour, normalisation, form-API verdicts |
 | `data/blank-message-candidates.csv` | 23 | What a single character does inside a chat bubble, and whether it gets past a send button's emptiness check |
 | `data/cf-width-resolved.csv` | 170 | The same advances re-measured at 4000 px and scaled to 16 px — this is what resolves values below one pixel |
+| `data/character-counting.csv` | 16 | One row per character: bytes, percent-encoded length, and what JavaScript and Python each report for the same string |
 | `data/cf-codepoint-ranges.csv` | 21 | The contiguous `Cf` ranges, for writing a regex without listing 170 code points |
 | `data/unicode-facts.json` | — | Raw Unicode Character Database output (Python `unicodedata`) |
 | `data/render-facts.json` | — | Raw browser output (Chromium via Playwright) |
@@ -85,6 +86,59 @@ check behind the send button, and the check most send buttons implement is
 - **U+E0020 TAG SPACE** is two UTF-16 units, so a field counting units reports
   20 after you type 10.
 
+## One character, four different numbers
+
+`data/character-counting.csv` counts the same character four ways, in four
+layers that do not agree. The measured string is the five-letter word `golds`
+with one character appended, so every figure is the total for a six-character
+string: a `6` means "five letters plus one character".
+
+| Character | UTF-8 bytes | Percent-encoded | JS `.length` | Python `len()` |
+|---|---|---|---|---|
+| U+200B | 3 | `%E2%80%8B` | 6 | 6 |
+| U+200C | 3 | `%E2%80%8C` | 6 | 6 |
+| U+200D | 3 | `%E2%80%8D` | 6 | 6 |
+| U+200E | 3 | `%E2%80%8E` | 6 | 6 |
+| U+200F | 3 | `%E2%80%8F` | 6 | 6 |
+| U+202A | 3 | `%E2%80%AA` | 6 | 6 |
+| U+202C | 3 | `%E2%80%AC` | 6 | 6 |
+| U+202D | 3 | `%E2%80%AD` | 6 | 6 |
+| U+202E | 3 | `%E2%80%AE` | 6 | 6 |
+| U+2060 | 3 | `%E2%81%A0` | 6 | 6 |
+| U+FEFF | 3 | `%EF%BB%BF` | 6 | 6 |
+| U+00AD | 2 | `%C2%AD` | 6 | 6 |
+| U+034F | 2 | `%CD%8F` | 6 | 6 |
+| U+3164 | 3 | `%E3%85%A4` | 6 | 6 |
+| U+E0001 | 4 | `%F3%A0%80%81` | 7 | 6 |
+| U+1D173 | 4 | `%F0%9D%85%B3` | 7 | 6 |
+
+Four layers, four rules:
+
+- **UTF-8 counts bytes.** 12 of these sixteen are three bytes, 2 are two
+  (U+00AD, U+034F), and 2 are four (U+E0001, U+1D173).
+- **Percent-encoding is three characters per byte** — `%XX` — so its length is
+  always three times the byte count: 9, 6 or 12. That is measured, not assumed:
+  the two columns agree on all sixteen rows.
+- **JavaScript `.length` counts UTF-16 code units.** Every character in the BMP
+  is one unit, so fourteen rows report 6. The two characters outside the BMP are
+  two units each, so they report **7**.
+- **Python `len()` counts code points**, so all sixteen report 6.
+
+The consequence is worth stating plainly: count invisible characters by
+`.length` and the two astral characters are counted **twice**. Five letters plus
+thirty-nine zero-width spaces is 44 by both counters, but it is 122 bytes on the
+wire — 5 + 39 x 3. Four different numbers for one string, and none of them is
+wrong.
+
+One column nobody asks for. Under NFKC, **U+3164 HANGUL FILLER** becomes
+**U+1160**, a different code point, and it is the only row that changes. A pipeline
+that normalises before it compares will be looking at a string nobody sent it.
+
+There is deliberately no raw-character column in the CSV. A file holding sixteen
+invisible characters corrupts the first time someone opens it in an editor that
+strips them, and a dataset about that failure should not be the example of it.
+The bytes are given as hex.
+
 ## Reproduce it
 
 ```bash
@@ -93,6 +147,9 @@ node   scripts/measure_chromium.mjs        # browser facts  -> data/render-facts
 node   scripts/measure_blank_message.mjs   # chat bubble    -> data/blank-message.json
 python scripts/build_csv.py                # join them      -> the three CSVs
 node   scripts/measure_resolved_widths.mjs # 4000 px sweep  -> data/cf-width-resolved.csv
+python scripts/measure_counting.py         # Python side    -> data/counting-py.json
+node   scripts/measure_counting.cjs        # JS side        -> data/counting-js.json
+python scripts/build_counting_csv.py       # join them      -> data/character-counting.csv
 ```
 
 One caveat about four rows. The advance of the Arabic combining marks
@@ -167,8 +224,8 @@ do carry meaning.
 
 ## Licence
 
-Code: MIT. Data (`data/*.csv`, `data/*.json`): CC0-1.0 — public domain, no
-attribution needed.
+**CC0-1.0** — public domain, no attribution needed. Code and data alike. The
+full text is in `LICENSE`.
 
 The measurements were made for
 [Strip Invisible](https://stripinvisible.com/), a browser-based tool that
